@@ -9,7 +9,7 @@ function Navigation({ authUser, handleSignOut }) {
       <div className="container px-4 mx-auto sm:px-12 md:px-24">
         <div className="flex flex-col justify-between gap-2 md:flex-row md:items-center">
           <div className="flex items-center gap-2">
-            <div className="text-xl font-bold select-none text-blue-700">react-threads-dcd</div>
+            <div className="text-xl font-bold select-none text-blue-700">react-threads-dcd 🗒️</div>
 
             {authUser ? (
               <Link to={ADD_PATH}>
