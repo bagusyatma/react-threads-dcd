@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+[contenteditable='true']:empty:not(:focus):before {
+  content: attr(data-placeholder);
+  color: rgb(175, 175, 175);
+  font-style: italic;
+}
+
+.truncate-custom {
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
